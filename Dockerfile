@@ -1,5 +1,6 @@
-FROM nginx:1.21.6-alpine as production-stage
+FROM nginx:1.23.0-alpine
 
-RUN apk --no-cache add tzdata
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories; \
+    apk --no-cache add tzdata;
 
 ENV TZ=Asia/Shanghai

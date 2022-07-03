@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 
-docker build -t "kuqoi/nginx:1.21.6-alpine" .
+source ./env.sh
+
+DOCKER_BUILDKIT=0 docker build -t "$TAG" .
+
+docker tag $TAG $TAG_MAJOR
+docker tag $TAG $TAG_MINOR
+docker tag $TAG $TAG_PATCH
