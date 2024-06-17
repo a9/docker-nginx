@@ -3,8 +3,8 @@
 export NAME=kuqoi/nginx
 export VERSION=alpine
 export VERSION_MAJAR=1-alpine
-export VERSION_MINOR=1.26-alpine
-export VERSION_PATCH=1.26.0-alpine
+export VERSION_MINOR=1.27-alpine
+export VERSION_PATCH=1.27.0-alpine
 
 export TAG="${NAME}:${VERSION}"
 export TAG_MAJOR="${NAME}:${VERSION_MAJAR}"
